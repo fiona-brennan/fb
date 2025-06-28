@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Visually Impactful Page</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body, html {
+      height: 100%;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      animation: fadeIn 1.2s ease-in-out;
+    }
+
+    .container {
+      max-width: 800px;
+      padding: 0 20px;
+    }
+
+    h1 {
+      font-size: 3.5rem;
+      margin-bottom: 20px;
+      line-height: 1.2;
+    }
+
+    p {
+      font-size: 1.3rem;
+      margin-bottom: 40px;
+      color: #d0d0d0;
+    }
+
+    .btn {
+      padding: 14px 32px;
+      font-size: 1rem;
+      color: #fff;
+      background: #ff4e50;
+      border: none;
+      border-radius: 50px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      box-shadow: 0 8px 20px rgba(255, 78, 80, 0.3);
+    }
+
+    .btn:hover {
+      background: #fc913a;
+      box-shadow: 0 12px 25px rgba(252, 145, 58, 0.4);
+      transform: translateY(-2px);
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2.2rem;
+      }
+      p {
+        font-size: 1.1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Welcome to Your Impactful Website</h1>
+    <p>Create stunning experiences with simple, elegant design.</p>
+    <button class="btn">Get Started</button>
+  </div>
+</body>
+</html>
